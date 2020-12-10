@@ -12,7 +12,6 @@ libreta = FastAPI()
 
 #
 
-
 @libreta.post("/user/consulta/")
 async def consulta_user(user_in: UserIn):
     user_in_db = get_user(user_in.username)
